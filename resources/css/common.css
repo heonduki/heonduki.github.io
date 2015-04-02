@@ -8,7 +8,6 @@ body{
 	font-family: 'Nanum Gothic', '돋움',dotum,Verdana,Arial,sans-serif;
 	font-size: 12px;
 }
-body, h1, h2, h3, h4, h5, h6, form, fieldset, button{line-height:140%;}
 button, a{border:0;background-color:transparent;cursor:pointer;}
 ul, ol, dl, dt, dd{list-style:none;}
 img{border:none;vertical-align:top;}
@@ -287,7 +286,7 @@ h1{
 /* sns */
 .sns-group{
 	float: right;
-	margin: 21px 200px 21px 0;
+	margin: 20px 200px 17px 00
 }
 .sns-group ul li{
 	margin: 0 3px;
