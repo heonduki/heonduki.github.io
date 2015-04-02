@@ -257,31 +257,31 @@ h1{
 }
 #gnb ul li.menu1 a{
 	width: 38px;
-	background: url(images/common/gnb1.png) 0 0 no-repeat;
+	background: url(../images/common/gnb1.png) 0 0 no-repeat;
 }
 #gnb ul li.menu1 a:hover{
-	background: url(images/common/gnb1-on.png) 0 0 no-repeat;
+	background: url(../images/common/gnb1-on.png) 0 0 no-repeat;
 }
 #gnb ul li.menu2 a{
 	width: 65px;
-	background: url(images/common/gnb2.png) 0 0 no-repeat;
+	background: url(../images/common/gnb2.png) 0 0 no-repeat;
 }
 #gnb ul li.menu2 a:hover{
-	background: url(images/common/gnb2-on.png) 0 0 no-repeat;
+	background: url(../images/common/gnb2-on.png) 0 0 no-repeat;
 }
 #gnb ul li.menu3 a{
 	width: 25px;
-	background: url(images/common/gnb3.png) 0 0 no-repeat;
+	background: url(../images/common/gnb3.png) 0 0 no-repeat;
 }
 #gnb ul li.menu3 a:hover{
-	background: url(images/common/gnb3-on.png) 0 0 no-repeat;
+	background: url(../images/common/gnb3-on.png) 0 0 no-repeat;
 }
 #gnb ul li.menu4 a{
 	width: 38px;
-	background: url(images/common/gnb4.png) 0 0 no-repeat;
+	background: url(../images/common/gnb4.png) 0 0 no-repeat;
 }
 #gnb ul li.menu4 a:hover{
-	background: url(images/common/gnb4-on.png) 0 0 no-repeat;
+	background: url(../images/common/gnb4-on.png) 0 0 no-repeat;
 }
 
 /* sns */
