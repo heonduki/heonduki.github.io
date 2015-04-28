@@ -1,0 +1,241 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrap{
+	min-width: 1330px;
+	background: #fff;	
+}
+#content-group{
+	position: relative;
+	width: 930px;
+	margin: 0 auto;
+	margin: 60px auto 70px;
+}
+
+/** 포트폴리오 **/
+/* title */
+#title-group{
+	margin: 0 0 40px;
+	text-align: center;
+}
+#title-group h2{
+	margin-bottom: 20px;
+	color: #303942;
+	font-size: 30px;
+	font-weight: bold;	
+}
+#title-group p{
+	color: #5b646d;
+	font-size: 13px;
+}
+/* tab */
+#tab-group ul li{border: 1px solid #c6c6c6;}
+#tab-group ul li:hover, #tab-group ul li:focus, #tab-group ul li.active{
+	border: 1px solid #3494f8;
+	background: #3494f8;
+}
+#tab-group a{
+	padding: 15px;
+	color: #303942;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+#tab-group a:hover, #tab-group a:focus, #tab-group li.active a{color: #fff;}
+#tab-group ul li.active span{
+	position: absolute;
+	top: auto;
+	bottom: -8px;
+	left: 49%;
+  	width: 12px;
+  	height: 7px;
+	background: url(../images/common/tab-arrow.png) 0 0 no-repeat;
+}
+/* 페이지 바로가기 */
+#title-link-group{
+	position: relative;
+	margin-top: -1px;
+	padding: 25px 20px;
+	border: 1px solid #ddd;
+	background: #f8f8f8;
+	*clear: both;
+	*float: left;
+	*width: 99.8%;
+	*padding: 25px 0;
+}
+#title-link-group ul{
+	*width: 96%;
+	*float: left;
+	*padding: 0 20px;
+}
+#title-link-group ul.link-right{
+	position:absolute;
+	top: 0;
+	right: 0;
+	padding: 25px 20px 25px 0;
+}
+#title-link-group ul li{
+	width: 49.5%;
+	margin-bottom: 10px;
+	*float: left;
+	*display: block;
+}
+#title-link-group ul li a{color: #333;}
+#title-link-group ul li a:hover, #title-link-group ul li a:active, #title-link-group ul li.active a{color: #3989ff; text-decoration: underline;}
+#title-link-group ul li.active a{color: #333;}
+#title-link-group ul li a img{padding: 4px 0 0 0;}
+/* 내용 */
+#text-group, .text-group{
+	position: relative;
+	width: 730px;
+	margin: 20px auto 0;
+	*margin: 50px auto 0;
+}
+#text-group h3, .text-group h3{
+	color: #303942;
+	font-size: 45px;
+	font-weight: bold;
+}
+#text-group h3 span, .text-group h3 span{font-size: 15px;}
+.text-box img.visual{
+	display: block;
+	width: 91.5%;
+	margin: 60px auto 0;
+}
+.text-box div p{
+	padding: 3px 0;
+	color: #303942;
+  	font-size: 13px;
+}
+.text-box div p a{color: #3989ff;}
+.text-box div p a:hover, .text-box div p a:active{text-decoration: underline;}
+.text-box p.concept{
+	margin: 30px 0;
+	padding-top: 30px;
+	border-top: 1px dashed #aaa;
+	color: #303942;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 150%;
+}
+/* 페이지 이동 */
+.page-btn-group{
+	position: absolute;
+	top: 47%;
+	width: 100%;
+}
+.page-btn-group a{
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+}
+.page-btn-group a.prev{
+	left: -68px;
+	background: url(../images/common/btn-prevLg-off.png) 0 0 no-repeat;
+}
+.page-btn-group a.next{
+	left: auto;
+	right: -68px;
+	background: url(../images/common/btn-nextLg-off.png) 0 0 no-repeat;
+}
+.page-btn-group a.prev:hover, .page-btn-group a.prev:focus{background: url(../images/common/btn-prevLg-on.png) 0 0 no-repeat;}
+.page-btn-group a.next:hover, .page-btn-group a.next:focus{background: url(../images/common/btn-nextLg-on.png) 0 0 no-repeat;}
+.page-btn-group a.prev.disabled:hover, .page-btn-group a.prev.disabled:focus{background: url(../images/common/btn-prevLg-off.png) 0 0 no-repeat;}
+.page-btn-group a.next.disabled:hover, .page-btn-group a.next.disabled:focus{background: url(../images/common/btn-nextLg-off.png) 0 0 no-repeat;}
+
+/** 프로필 **/
+#intro-group{
+	position: relative;
+	padding: 30px 0;
+	border-top: 1px solid #596168;
+	border-bottom: 1px solid #ddd;
+}
+.intro-photo{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 302px;
+	padding: 20px 40px 20px 148px;
+	border-right: 1px dotted #c0c0c0;
+}
+.intro-photo img{
+	width: 100%;
+}
+.intro-text .text-group{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 400px;
+	text-align: left;
+}
+.text-group dl{margin-top: 35px;}
+.text-group dl dt{margin-bottom: 10px;}
+.text-group dl dd{margin-bottom: 4px;}
+.text-group dl dd.title{
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.text-group dl dd.title span{font-size: 16px;}
+.text-group dl dd img{padding: 2px 0 0 2px;}
+
+#life-group{margin-top: 50px;}
+#life-group dl{
+	display: inline-block;
+	width: 151px;
+	margin-left: 40px;
+}
+#life-group dl:first-child{margin-left: 0;}
+#life-group dl dt{
+	margin-bottom: 10px;
+	text-align: center;	
+}
+#life-group dl dd{color: #55ab4a;}
+#life-group dl dd, #life-group dl dd a{
+	font-size: 14px;
+	font-weight: bold;
+}
+#life-group dl dd img{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+#life-group dl dd span{
+	display: block;
+	padding-top: 10px;
+	color: #303942;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 17px;	
+}
+
+/** 이용약관 **/
+#guide-gorup{margin-top: 45px;}
+#guide-gorup dl dt{
+	padding: 0 25px;
+	margin-bottom:10px;
+	padding-top:15px;
+	border-top: 1px dotted #c0c0c0;
+	color: #99a4ad;
+	font-size: 16px;
+}
+#guide-gorup dl dt:first-child{
+	padding-top:0;
+	border-top: 0;
+}
+#guide-gorup dl dt a{color: #99a4ad;}
+#guide-gorup dl dt strong{color: #3989ff;}	
+#guide-gorup dl dd{
+	margin-bottom: 25px;
+	padding: 0 20px;
+	font-size: 13px;
+}
+#guide-gorup dl dd ul li{line-height: 18px;}
+#guide-gorup dl dd ul li ul{
+	margin-left: 16px;
+}
+#guide-gorup dl dd ul li ul li{
+	color: #777;
+	font-size: 12px;
+}
