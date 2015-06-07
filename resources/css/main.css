@@ -52,6 +52,7 @@ h2{
 	color: #99a4ad;
 }
 
+
 @media (max-width:767px){
 	h2{margin-left: 20px;}
 	#portfolio-group ul li{
@@ -73,6 +74,8 @@ h2{
 		top: -10px;
 	}
 }
+
+
 @media (min-width:768px) and (max-width:1023px){
 	h2{margin-left: 20px;}
 }
