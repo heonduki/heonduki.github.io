@@ -52,19 +52,8 @@
 	background: #7e47b4;
 }
 
-@media (max-width:767px){
-	#wrap{min-width: 100%;}
-	#header{height: auto;}
-	#header-group, #content-group, #footer-group{width: 100%;}
-	#profile-group, #site-group{display: none;}
-	#portfolio-group{
-		float: none;
-		width: 100%;
-		padding: 0;
-		border: 0;
-	}
-}
-@media (min-width:768px) and (max-width:1023px){
+
+@media (max-width:1023px){
 	#wrap{min-width: 100%;}
 	#header-group, #content-group, #footer-group{width: 100%;}
 	#profile-group, #site-group{display: none;}
@@ -76,6 +65,12 @@
 	}
 }
 
-@media (min-width:1024px){
-	
+@media (max-width:767px){
+	#header{height: auto;}
+	#portfolio-group{
+		float: none;
+		width: 100%;
+		padding: 0;
+		border: 0;
+	}
 }

@@ -53,8 +53,12 @@ h2{
 }
 
 
-@media (max-width:767px){
+@media (max-width:1023px){
 	h2{margin-left: 20px;}
+}
+
+
+@media (max-width:767px){
 	#portfolio-group ul li{
 		float: none;
 		width: 100%;
@@ -74,11 +78,3 @@ h2{
 		top: -10px;
 	}
 }
-
-
-@media (min-width:768px) and (max-width:1023px){
-	h2{margin-left: 20px;}
-}
-
-
-
