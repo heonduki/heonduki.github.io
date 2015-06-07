@@ -1,11 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
 
+#wrap{
+	width: 100%;
+	min-width: 1330px;
+	background: #eee;	
+}
+#content-group{
+	position: relative;
+	width: 1330px;
+	margin: 0 auto;
+}
 
 /* header */
 #header{
+	position: relative;
 	height: 65px;
-	background: #303942 url(../images/common/bg-header.gif) 0 0 repeat-x;
+	background: #303942 url(../images/common/bg-header.gif) 0 0 repeat;
 }
 #header-group, #footer-group{
 	position: relative;
@@ -13,9 +24,6 @@
 	margin: 0 auto;
 }
 /* content */
-#content{
-	min-height:916px;
-}
 #profile-group{
 	float: left;
 	width: 278px;
@@ -28,13 +36,13 @@
 	border-right: 1px solid #dedede;
 	border-left: 1px solid #dedede;
 }
-#event-group{
+#site-group{
 	float: right;
 	width: 278px;
 	min-height: 856px;
 	border-right: 1px solid #dedede;
 }
-#profile-group, #portfolio-group, #event-group{
+#profile-group, #portfolio-group, #site-group{
 	padding: 30px 15px;
 }
 
@@ -44,9 +52,30 @@
 	background: #7e47b4;
 }
 
+@media (max-width:767px){
+	#wrap{min-width: 100%;}
+	#header{height: auto;}
+	#header-group, #content-group, #footer-group{width: 100%;}
+	#profile-group, #site-group{display: none;}
+	#portfolio-group{
+		float: none;
+		width: 100%;
+		padding: 0;
+		border: 0;
+	}
+}
+@media (min-width:768px) and (max-width:1023px){
+	#wrap{min-width: 100%;}
+	#header-group, #content-group, #footer-group{width: 100%;}
+	#profile-group, #site-group{display: none;}
+	#portfolio-group{
+		float: none;
+		width: 100%;
+		padding: 30px 0;
+		border: 0;
+	}
+}
+
 @media (min-width:1024px){
 	
 }
-@media (min-width:768px) and (max-width:1024px){}
-@media (max-width:767px){}
-@media (max-width:768px){}

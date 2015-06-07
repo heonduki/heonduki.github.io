@@ -2,7 +2,6 @@
 /* CSS Document */
 
 #wrap{
-	min-width: 1330px;
 	background: #fff;	
 }
 #content-group{
@@ -96,12 +95,16 @@
 	font-size: 45px;
 	font-weight: bold;
 }
-#text-group h3 span, .text-group h3 span{font-size: 15px;}
+#text-group h3 span, .text-group h3 span{
+	display: inline-block;
+	font-size: 15px;
+}
 .text-box img.visual{
 	display: block;
 	width: 91.5%;
 	margin: 60px auto 0;
 }
+.text-box div{margin-bottom: 25px;}
 .text-box div p{
 	padding: 3px 0;
 	color: #303942;
@@ -110,8 +113,7 @@
 .text-box div p a{color: #3989ff;}
 .text-box div p a:hover, .text-box div p a:active{text-decoration: underline;}
 .text-box p.concept{
-	margin: 30px 0;
-	padding-top: 30px;
+	padding-top: 25px;
 	border-top: 1px dashed #aaa;
 	color: #303942;
 	font-size: 13px;
@@ -182,8 +184,10 @@
 
 #life-group{margin-top: 50px;}
 #life-group dl{
+	*float: left;
 	display: inline-block;
 	width: 151px;
+	*height: 240px;
 	margin-left: 40px;
 }
 #life-group dl:first-child{margin-left: 0;}
@@ -211,31 +215,106 @@
 }
 
 /** 이용약관 **/
-#guide-gorup{margin-top: 45px;}
-#guide-gorup dl dt{
-	padding: 0 25px;
+#guide-group{margin-top: 45px;}
+#guide-group dl dt{
+	padding: 0 20px;
 	margin-bottom:10px;
 	padding-top:15px;
 	border-top: 1px dotted #c0c0c0;
 	color: #99a4ad;
 	font-size: 16px;
 }
-#guide-gorup dl dt:first-child{
+#guide-group dl dt:first-child{
 	padding-top:0;
 	border-top: 0;
 }
-#guide-gorup dl dt a{color: #99a4ad;}
-#guide-gorup dl dt strong{color: #3989ff;}	
-#guide-gorup dl dd{
+#guide-group dl dt a{color: #99a4ad;}
+#guide-group dl dt strong{color: #3989ff;}	
+#guide-group dl dd{
 	margin-bottom: 25px;
 	padding: 0 20px;
 	font-size: 13px;
 }
-#guide-gorup dl dd ul li{line-height: 18px;}
-#guide-gorup dl dd ul li ul{
+#guide-group dl dd ul li{line-height: 18px;}
+#guide-group dl dd ul li ul{
 	margin-left: 16px;
 }
-#guide-gorup dl dd ul li ul li{
+#guide-group dl dd ul li ul li{
 	color: #777;
 	font-size: 12px;
+}
+.faq-list dl dd{padding: 0 45px !important;}
+
+@media (max-width:767px){
+
+	#life-group dl{
+		display: block;
+		width: 100% !important;
+		margin-left: 0 !important;
+		text-align: center;
+	}
+	#life-group dl dd img{
+		width: auto;
+		margin: 0 auto 20px;
+		text-align: center;
+	}
+	
+	/* portfolio */
+	#text-group, .text-group{
+		width: auto;
+		margin: 20px 20px 0;
+	}	
+	.text-box img.visual{width: 100%;}	
+}
+@media (max-width:1023px){
+	#content-group{width: 100%;}	
+	#title-group{margin: 0 20px 40px;}
+	
+	/* profile */
+	#intro-group{margin: 0 20px;}
+	.intro-photo{
+		width: 100%;
+		padding: 0;
+		padding-bottom: 30px;
+		border-right: none;
+		border-bottom: 1px dotted #c0c0c0;
+		text-align: center;
+	}
+	.intro-photo img{
+		width: auto;
+	}
+	.intro-text .text-group{
+		position: inherit;
+		width: 100%;
+		margin: 20px auto 0;
+		text-align: center;
+	}
+	.text-group dl dd img{display: none;}
+	#life-group{
+		padding: 0 20px;
+		text-align: center;
+	}
+	#life-group dl{
+		width: 160px;
+		margin-left: 70px;
+		margin-bottom: 50px;
+	}
+	
+	/* portfolio */
+	#tab-group, #title-link-group{margin: 0 20px;}
+	#title-link-group ul li{width: 100%;}
+	#title-link-group ul li.sm-mb10{margin-bottom: 10px !important;}
+	.page-btn-group a.prev{left: 0;}
+	.page-btn-group a.next{right: 0;}
+	
+	/* service */
+	#title-link-group ul{width: 100% !important;}
+	#title-link-group ul.link-right{
+		position: inherit;
+		padding: 0;
+	}
+	#guide-group dl dt{
+		margin: 0 20px 10px;
+		padding: 15px 0 0 0;		
+	}
 }

@@ -14,7 +14,7 @@ img{border:none;vertical-align:top;}
 .checkBox{border:0px;background:none;}
 .hide, hr, legend{overflow:hidden;visibility:hidden;position:absolute;width:1px;height:1px;font-size:0;line-height:0;}
 ul.inline-block li{display:inline-block; *display:inline;}
-.disabled a, .disabled{color: #777; background-color: #fff; cursor: not-allowed;}
+.disabled a, .disabled{color: #777 !important; background-color: #fff; cursor: not-allowed;}
 
 /* form */
 fieldset{border:0 !important;}
@@ -268,12 +268,15 @@ h1{
 	float: left;
 	width: 101px;
 	height: 14px;
-	margin-right: 153px;
+	margin-right: 200px;
 	margin-left: 200px;
 	padding: 25px 0;
 }
 
 /* gnb */
+#gnb{
+	position: relative;
+}
 #gnb ul{
 	float: left;
 }
@@ -319,7 +322,7 @@ h1{
 /* sns */
 .sns-group{
 	float: right;
-	margin: 20px 200px 17px 00
+	margin: 20px 200px 17px 0;
 }
 .sns-group ul li{
 	margin: 0 3px;
@@ -335,4 +338,53 @@ h1{
 }
 #help-group ul li > img{
 	margin: 0 12px;
+}
+
+@media (max-width:767px){
+	h1{
+		float: none;
+		width: 100%;
+		margin: 0;
+		border-bottom: 2px solid #262d35;
+		text-align: center;
+	}
+	#gnb ul{
+		float: none;	
+		text-align: center;
+	}
+	#gnb ul li{
+		padding: 23px 25px;
+	}
+	.sns-group{
+		position: absolute;
+  		top: 20px;
+  		right: 20px;
+		float: none;
+  		margin: 0;
+	}
+
+	#help-group, #address-group{
+		margin-left: 20px;
+	}
+	address{
+		width: 265px;
+		overflow: hidden;
+	}
+}
+@media (min-width:768px) and (max-width:1023px){
+	h1{
+		margin-right: 20px;
+  		margin-left: 50px;
+	}
+	#gnb ul{
+		width: 62%;
+		text-align: center;	
+	}
+	.sns-group{
+		margin-right: 50px;
+	}
+	
+	#help-group, #address-group {
+		margin-left: 15px;
+	}
 }

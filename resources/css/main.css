@@ -1,14 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
-#wrap{
-	min-width: 1330px;
-	background: #eee;	
-}
-#content-group{
-	position: relative;
-	width: 1330px;
-	margin: 0 auto;
+#content{
+	min-height:916px;
 }
 
 h2{
@@ -50,12 +44,38 @@ h2{
 	padding: 10px;
 	text-align: center;
 }
+#more-group a:hover, #more-group a:focus{text-decoration: underline;}
+#title-link-group ul{margin-bottom: 15px;}
+#title-link-group ul li{line-height: 20px;}
+#title-link-group ul li a img{margin-top: 7px;}
+#title-link-group ul li span{
+	color: #99a4ad;
+}
 
-
-@media (min-width:1024px) and (max-width:1210px){}
-@media (min-width:768px) and (max-width:1024px){}
-@media (max-width:767px){}
-@media (max-width:768px){}
+@media (max-width:767px){
+	h2{margin-left: 20px;}
+	#portfolio-group ul li{
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+	#portfolio-group ul li dl{
+		margin: 0 20px;
+		padding: 30px 0;
+		border-top: 1px dashed #ccc;
+	}
+	#portfolio-group ul li dl dt{padding-bottom: 0;}
+	#portfolio-group ul li dl dt a span{
+		margin: 0 20px;
+		padding-top: 7px;
+	}
+	#more-group{
+		top: -10px;
+	}
+}
+@media (min-width:768px) and (max-width:1023px){
+	h2{margin-left: 20px;}
+}
 
 
 
