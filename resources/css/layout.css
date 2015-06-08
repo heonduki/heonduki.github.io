@@ -64,3 +64,15 @@
 		border: 0;
 	}
 }
+
+@media (min-width:768px) and (max-width:1023px){
+	#wrap{min-width: 100%;}
+	#header-group, #content-group, #footer-group{width: 100%;}
+	#profile-group, #site-group{display: none;}
+	#portfolio-group{
+		float: none;
+		width: 100%;
+		padding: 30px 0;
+		border: 0;
+	}
+}
