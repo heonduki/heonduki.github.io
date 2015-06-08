@@ -245,32 +245,9 @@
 }
 .faq-list dl dd{padding: 0 45px !important;}
 
-@media (max-width:767px) {
-
-	#life-group dl{
-		display: block;
-		width: 100% !important;
-		margin-left: 0 !important;
-		text-align: center;
-	}
-	#life-group dl dd img{
-		width: auto;
-		margin: 0 auto 20px;
-		text-align: center;
-	}
-	
-	/* portfolio */
-	#text-group, .text-group{
-		width: auto;
-		margin: 20px 20px 0;
-	}	
-	.text-box img.visual{width: 100%;}	
-}
-
 @media (max-width:1023px) {
 	#content-group{width: 100%;}	
 	#title-group{margin: 0 20px 40px;}
-	
 	/* profile */
 	#intro-group{margin: 0 20px;}
 	.intro-photo{
@@ -281,9 +258,7 @@
 		border-bottom: 1px dotted #c0c0c0;
 		text-align: center;
 	}
-	.intro-photo img{
-		width: auto;
-	}
+	.intro-photo img{width: auto;}
 	.intro-text .text-group{
 		position: inherit;
 		width: 100%;
@@ -300,7 +275,6 @@
 		margin-left: 70px;
 		margin-bottom: 50px;
 	}
-	
 	/* portfolio */
 	#tab-group, #title-link-group{margin: 0 20px;}
 	#title-link-group ul li{width: 100%;}
@@ -319,3 +293,24 @@
 		padding: 15px 0 0 0;		
 	}
 }
+
+@media (max-width:767px) {
+	#life-group dl{
+		display: block;
+		width: 100% !important;
+		margin-left: 0 !important;
+		text-align: center;
+	}
+	#life-group dl dd img{
+		width: auto;
+		margin: 0 auto 20px;
+		text-align: center;
+	}
+	/* portfolio */
+	#text-group, .text-group{
+		width: auto;
+		margin: 20px 20px 0;
+	}	
+	.text-box img.visual{width: 100%;}	
+}
+
