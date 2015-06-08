@@ -340,27 +340,7 @@ h1{
 	margin: 0 12px;
 }
 
-
-@media (min-width:768px) and (max-width:1023px){
-	h1{
-		margin-right: 20px;
-  		margin-left: 50px;
-	}
-	#gnb ul{
-		width: 62%;
-		text-align: center;	
-	}
-	.sns-group{
-		margin-right: 50px;
-	}
-	
-	#help-group, #address-group {
-		margin-left: 15px;
-	}
-}
-
-
-@media (max-width:767px){
+@media (max-width:767px) {
 	h1{
 		float: none;
 		width: 100%;
@@ -372,9 +352,7 @@ h1{
 		float: none;	
 		text-align: center;
 	}
-	#gnb ul li{
-		padding: 23px 25px;
-	}
+	#gnb ul li{padding: 23px 25px;}
 	.sns-group{
 		position: absolute;
   		top: 20px;
@@ -383,13 +361,22 @@ h1{
   		margin: 0;
 	}
 
-	#help-group, #address-group{
-		margin-left: 20px;
-	}
+	#help-group, #address-group{margin-left: 20px;}
 	address{
 		width: 265px;
 		overflow: hidden;
 	}
 }
 
-
+@media (min-width:768px) and (max-width:1023px) {
+	h1{
+		margin-right: 20px;
+  		margin-left: 50px;
+	}
+	#gnb ul{
+		width: 62%;
+		text-align: center;	
+	}
+	.sns-group{margin-right: 50px;}
+	#help-group, #address-group {margin-left: 15px;}
+}
