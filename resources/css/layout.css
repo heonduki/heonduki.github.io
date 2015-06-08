@@ -52,7 +52,7 @@
 	background: #7e47b4;
 }
 
-@media (max-width:767px){
+@media (max-width:767px) {
 	#wrap{min-width: 100%;}
 	#header{height: auto;}
 	#header-group, #content-group, #footer-group{width: 100%;}
