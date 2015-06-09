@@ -245,6 +245,17 @@
 }
 .faq-list dl dd{padding: 0 45px !important;}
 
+#life-group.message dl, .message dl{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0;
+}
+#life-group.message dl dd img, .message dl dd img{
+	display: block;
+	width: auto;
+	margin: 0 auto 20px;
+}
+
 @media (max-width:1023px) {
 	#content-group{width: 100%;}	
 	#title-group{margin: 0 20px 40px;}
