@@ -325,3 +325,6 @@
 	.text-box img.visual{width: 100%;}	
 }
 
+@media (max-width:320px) {
+	.intro-photo img{width: 100%;}	
+}
